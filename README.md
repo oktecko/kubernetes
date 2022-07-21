@@ -6,102 +6,102 @@
 
 ----
 
-Kubernetes, also known as K8s, is an open source system for managing [containerized applications]
-across multiple hosts. It provides basic mechanisms for deployment, maintenance,
-and scaling of applications.
+Kubernetes، همچنین به عنوان K8s شناخته می شود، یک سیستم منبع باز برای مدیریت [برنامه های کانتینری] است.
+در چندین میزبان مکانیزم های اساسی برای استقرار، نگهداری،
+و مقیاس بندی برنامه ها
 
-Kubernetes builds upon a decade and a half of experience at Google running
-production workloads at scale using a system called [Borg],
-combined with best-of-breed ideas and practices from the community.
+Kubernetes بر اساس یک دهه و نیم تجربه در Google اجرا شده است
+بارهای کاری تولید در مقیاس با استفاده از سیستمی به نام [Borg]،
+با بهترین ایده ها و شیوه های جامعه ترکیب شده است.
 
-Kubernetes is hosted by the Cloud Native Computing Foundation ([CNCF]).
-If your company wants to help shape the evolution of
-technologies that are container-packaged, dynamically scheduled,
-and microservices-oriented, consider joining the CNCF.
-For details about who's involved and how Kubernetes plays a role,
-read the CNCF [announcement].
+Kubernetes توسط بنیاد محاسبات Cloud Native ([CNCF]) میزبانی می شود.
+اگر شرکت شما می خواهد به شکل گیری تکامل کمک کند
+فن آوری هایی که به صورت کانتینری بسته بندی می شوند، به صورت پویا برنامه ریزی شده اند،
+و میکروسرویس گرا، پیوستن به CNCF را در نظر بگیرید.
+برای جزئیات در مورد اینکه چه کسی درگیر است و Kubernetes چگونه نقش بازی می کند،
+CNCF [اطلاعیه] را بخوانید.
 
 ----
 
-## To start using K8s
+## برای شروع استفاده از K8s
 
-See our documentation on [kubernetes.io].
+مستندات ما را در [kubernetes.io] ببینید.
 
-Try our [interactive tutorial].
+[آموزش تعاملی] ما را امتحان کنید.
 
-Take a free course on [Scalable Microservices with Kubernetes].
+یک دوره رایگان در مورد [Microservices Scalable with Kubernetes] بگذرانید.
 
-To use Kubernetes code as a library in other applications, see the [list of published components](https://git.k8s.io/kubernetes/staging/README.md).
-Use of the `k8s.io/kubernetes` module or `k8s.io/kubernetes/...` packages as libraries is not supported.
+برای استفاده از کد Kubernetes به عنوان کتابخانه در سایر برنامه‌ها، به [لیست مؤلفه‌های منتشرشده] (https://git.k8s.io/kubernetes/staging/README.md) مراجعه کنید.
+استفاده از ماژول "k8s.io/kubernetes" یا بسته های "k8s.io/kubernetes/..." به عنوان کتابخانه پشتیبانی نمی شود.
 
-## To start developing K8s
+## برای شروع توسعه K8s
 
-The [community repository] hosts all information about
-building Kubernetes from source, how to contribute code
-and documentation, who to contact about what, etc.
+[مخزن انجمن] همه اطلاعات مربوط به آن را میزبانی می کند
+ساخت Kubernetes از منبع، نحوه مشارکت کد
+و مستندات، با چه کسی در مورد چه چیزی تماس بگیریم و غیره
 
-If you want to build Kubernetes right away there are two options:
+اگر می خواهید فورا Kubernetes را بسازید دو گزینه وجود دارد:
 
-##### You have a working [Go environment].
+##### شما یک [محیط برو] کار دارید.
 
 ```
 mkdir -p $GOPATH/src/k8s.io
-cd $GOPATH/src/k8s.io
+سی دی $GOPATH/src/k8s.io
 git clone https://github.com/kubernetes/kubernetes
-cd kubernetes
-make
+سی دی کوبرنتس
+ساختن
 ```
 
-##### You have a working [Docker environment].
+##### شما یک [محیط Docker] در حال کار دارید.
 
 ```
 git clone https://github.com/kubernetes/kubernetes
-cd kubernetes
-make quick-release
+سی دی کوبرنتس
+انتشار سریع
 ```
 
-For the full story, head over to the [developer's documentation].
+برای داستان کامل، به [اسناد برنامه‌نویس] بروید.
 
-## Support
+## پشتیبانی
 
-If you need support, start with the [troubleshooting guide],
-and work your way through the process that we've outlined.
+اگر به پشتیبانی نیاز دارید، با [راهنمای عیب‌یابی] شروع کنید،
+و راه خود را از طریق فرآیندی که ما تشریح کردیم، ادامه دهید.
 
-That said, if you have questions, reach out to us
-[one way or another][communication].
+گفت: اگر سوالی دارید، با ما تماس بگیرید
+[یک راه یا دیگری] [ارتباط].
 
-[announcement]: https://cncf.io/news/announcement/2015/07/new-cloud-native-computing-foundation-drive-alignment-among-container
-[Borg]: https://research.google.com/pubs/pub43438.html
+[اعلام]: https://cncf.io/news/announcement/2015/07/new-cloud-native-computing-foundation-drive-alignment-among-container
+[بورگ]: https://research.google.com/pubs/pub43438.html
 [CNCF]: https://www.cncf.io/about
-[communication]: https://git.k8s.io/community/communication
-[community repository]: https://git.k8s.io/community
-[containerized applications]: https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
-[developer's documentation]: https://git.k8s.io/community/contributors/devel#readme
-[Docker environment]: https://docs.docker.com/engine
-[Go environment]: https://golang.org/doc/install
+[ارتباطات]: https://git.k8s.io/community/communication
+[مخزن انجمن]: https://git.k8s.io/community
+[برنامه های کانتینری]: https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
+[اسناد برنامه‌نویس]: https://git.k8s.io/community/contributors/devel#readme
+[محیط داکر]: https://docs.docker.com/engine
+[محیط برو]: https://golang.org/doc/install
 [GoPkg]: https://pkg.go.dev/k8s.io/kubernetes
-[GoPkg Widget]: https://pkg.go.dev/badge/k8s.io/kubernetes.svg
-[interactive tutorial]: https://kubernetes.io/docs/tutorials/kubernetes-basics
+[ویجت GoPkg]: https://pkg.go.dev/badge/k8s.io/kubernetes.svg
+[آموزش تعاملی]: https://kubernetes.io/docs/tutorials/kubernetes-basics
 [kubernetes.io]: https://kubernetes.io
-[Scalable Microservices with Kubernetes]: https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615
-[troubleshooting guide]: https://kubernetes.io/docs/tasks/debug/
+[Microservices مقیاس پذیر با Kubernetes]: https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615
+[راهنمای عیب یابی]: https://kubernetes.io/docs/tasks/debug/
 
-## Community Meetings 
+## جلسات انجمن
 
-The [Calendar](https://www.kubernetes.dev/resources/calendar/) has the list of all the meetings in Kubernetes community in a single location.
+[تقویم] (https://www.kubernetes.dev/resources/calendar/) فهرستی از تمام جلسات انجمن Kubernetes را در یک مکان دارد.
 
-## Adopters
+## پذیرندگان
 
-The [User Case Studies](https://kubernetes.io/case-studies/) website has real-world use cases of organizations across industries that are deploying/migrating to Kubernetes.
+وب‌سایت [مطالعات موردی کاربر] (https://kubernetes.io/case-studies/) دارای موارد استفاده واقعی از سازمان‌هایی در سراسر صنایعی است که در حال استقرار/مهاجرت به Kubernetes هستند.
 
-## Governance 
+## حکومت
 
-Kubernetes project is governed by a framework of principles, values, policies and processes to help our community and constituents towards our shared goals.
+پروژه Kubernetes توسط چارچوبی از اصول، ارزش‌ها، خط‌مشی‌ها و فرآیندها اداره می‌شود تا به جامعه و گروه‌های ما در رسیدن به اهداف مشترکمان کمک کند.
 
-The [Kubernetes Community](https://github.com/kubernetes/community/blob/master/governance.md) is the launching point for learning about how we organize ourselves.
+[انجمن Kubernetes] (https://github.com/kubernetes/community/blob/master/governance.md) نقطه شروعی برای یادگیری در مورد نحوه سازماندهی خودمان است.
 
-The [Kubernetes Steering community repo](https://github.com/kubernetes/steering) is used by the Kubernetes Steering Committee, which oversees governance of the Kubernetes project.
+[مخزن انجمن راهبری Kubernetes] (https://github.com/kubernetes/steering) توسط کمیته راهبری Kubernetes استفاده می‌شود که بر مدیریت پروژه Kubernetes نظارت می‌کند.
 
-## Roadmap 
+## نقشه راه
 
-The [Kubernetes Enhancements repo](https://github.com/kubernetes/enhancements) provides information about Kubernetes releases, as well as feature tracking and backlogs.
+[مخزن بهبودهای Kubernetes] (https://github.com/kubernetes/enhancements) اطلاعاتی درباره نسخه‌های Kubernetes، و همچنین ردیابی ویژگی‌ها و موارد عقب‌افتاده ارائه می‌دهد.
